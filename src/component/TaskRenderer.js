@@ -26,10 +26,10 @@ const TaskRenderer = (props) => {
   return (
     taskData?.length > 0 &&
     taskData.map((value) => (
-      <div className='form-check' key={value.uuid}>
+      <div className='form-check'>
         <div className='form-group'>
           <input
-            key={value.uuid}
+            key={value.id}
             className='form-check-input'
             type='checkbox'
             checked={!value.isActive}
@@ -37,7 +37,7 @@ const TaskRenderer = (props) => {
           />
         </div>
         <div
-          key={value.uuid}
+          key={value.id}
           className={`form-check-label ${value.isActive ? "" : "text-strike"}`}>
           {value.content}
         </div>
