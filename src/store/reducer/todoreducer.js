@@ -23,10 +23,8 @@ export function todo(state = initialState, action) {
     case UPDATE_TASKS:
       const updatedTasks = state.tasks.map((value) => {
         if (value.id === action.taskId) {
-          console.log("same id", value.id);
           value.isActive = !value.isActive;
         }
-        console.log(value);
         return value;
       });
       return {
