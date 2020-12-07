@@ -17,8 +17,10 @@ div {
   &.text-strike {
     text-decoration: line-through;
   }
-  &.float-right {
-    float: right;
+  &.footer-button {
+    @media only screen and (min-width: 600px) {
+      float: right;
+    }
   }
 }
 

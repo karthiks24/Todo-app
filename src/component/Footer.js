@@ -42,7 +42,7 @@ function Footer() {
       <span className='vl' />
       <span>{`${pendingTask.length} items left`}</span>
 
-      <div className='float-right'>
+      <div className='footer-button'>
         <button
           type='button'
           className={buttonStyles("all")}
