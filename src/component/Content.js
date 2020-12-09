@@ -27,7 +27,7 @@ const Content = () => {
 
   return (
     <div className='mb-3'>
-      <div className='input-group'>
+      <div className='input-group mb-3'>
         <input
           className='form-control border-right-0'
           placeholder={type === "add" ? "Add task" : "Search task"}

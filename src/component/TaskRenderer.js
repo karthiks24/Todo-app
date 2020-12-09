@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { updateTask } from "../store/actions/todoActions";
-
+import Checkbox from "./Checkbox";
 const TaskRenderer = (props) => {
   const { text, tasks } = props;
   const dispatch = useDispatch();
@@ -26,7 +26,11 @@ const TaskRenderer = (props) => {
   return (
     taskData?.length > 0 &&
     taskData.map((value) => (
-      <div className='form-check'>
+      <>
+        <Checkbox data={value} handler={handleTaskChange} />
+        <hr />
+      </>
+      /*   <div className='form-check'>
         <div className='form-group'>
           <input
             key={value.id}
@@ -42,7 +46,7 @@ const TaskRenderer = (props) => {
           {value.content}
         </div>
         <hr />
-      </div>
+      </div> */
     ))
   );
 };
