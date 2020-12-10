@@ -15,8 +15,7 @@ const Checkbox = (props) => {
     <div className='bg'>
       <div
         className={`checkbox-container ${design ? "focus" : ""}`}
-        key={data?.id}
-        onClick={() => handler(data)}>
+        key={data?.id}>
         <input
           type='checkbox'
           className='check'
@@ -24,6 +23,7 @@ const Checkbox = (props) => {
           disabled={data.isDisabled}
           onFocus={focusHandler}
           onBlur={blurHandler}
+          onClick={() => handler(data)}
         />
       </div>
 
