@@ -78,4 +78,11 @@ nav {
 
 .bg {
   background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.theme {
+  background-color: #413175;
 }

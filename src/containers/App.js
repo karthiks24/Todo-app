@@ -4,7 +4,6 @@ import "react-notifications-component/dist/theme.css";
 import ReactNotification from "react-notifications-component";
 import Header from "./Header";
 import TaskContainer from "./TaskContainer";
-
 function App() {
   return (
     <div className='page-container'>

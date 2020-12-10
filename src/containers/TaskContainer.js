@@ -1,5 +1,6 @@
 import Content from "../component/Content";
 import Footer from "../component/Footer";
+import Theme from "./Theme";
 function TaskContainer() {
   return (
     <div className='page-section'>
@@ -8,6 +9,7 @@ function TaskContainer() {
           <h1 className='card-title text-center'>Things To Do</h1>
           <Content />
         </div>
+        <Theme />
         <Footer />
       </div>
     </div>
